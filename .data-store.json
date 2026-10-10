@@ -1,0 +1,1749 @@
+{
+  "users": [
+    {
+      "id": "user_admin",
+      "email": "admin@forgefitness.com",
+      "password": "admin123",
+      "role": "admin",
+      "status": "active",
+      "firstName": "Forge",
+      "lastName": "Admin",
+      "createdAt": "2026-09-09T09:32:12.712Z",
+      "onboardingCompleted": true,
+      "onboardingData": {
+        "goal": "Strength",
+        "experience": "Advanced",
+        "location": "Gym",
+        "daysPerWeek": 5,
+        "durationMinutes": 60,
+        "weightKg": 82,
+        "heightCm": 180
+      },
+      "activeProgramId": "prog_strength"
+    },
+    {
+      "id": "user_demo",
+      "email": "alex@forgefitness.com",
+      "password": "user123",
+      "role": "user",
+      "status": "active",
+      "firstName": "Alex",
+      "lastName": "Rider",
+      "createdAt": "2026-10-04T09:32:12.712Z",
+      "onboardingCompleted": true,
+      "onboardingData": {
+        "goal": "Muscle Gain",
+        "experience": "Intermediate",
+        "location": "Gym",
+        "daysPerWeek": 4,
+        "durationMinutes": 60,
+        "weightKg": 78.5,
+        "heightCm": 178
+      },
+      "activeProgramId": "prog_ppl"
+    }
+  ],
+  "subscriptions": [
+    {
+      "userId": "user_admin",
+      "status": "paid_active",
+      "plan": "monthly",
+      "price": 19.99,
+      "currency": "USD",
+      "trialStartDate": null,
+      "trialEndDate": null,
+      "paidStartDate": "2026-09-09T09:32:12.712Z",
+      "paidEndDate": "2027-09-09T09:32:12.712Z",
+      "autoRenew": true,
+      "provider": "system_admin"
+    },
+    {
+      "userId": "user_demo",
+      "status": "trial_active",
+      "plan": "monthly",
+      "price": 19.99,
+      "currency": "USD",
+      "trialStartDate": "2026-10-04T09:32:12.712Z",
+      "trialEndDate": "2026-10-11T09:32:12.712Z",
+      "paidStartDate": null,
+      "paidEndDate": null,
+      "autoRenew": false,
+      "provider": "forge_trial"
+    }
+  ],
+  "programs": [
+    {
+      "id": "prog_beginner",
+      "title": "Beginner Foundation",
+      "slug": "beginner-foundation",
+      "difficulty": "Beginner",
+      "durationWeeks": 4,
+      "location": "Gym or Home",
+      "goal": "General Fitness & Muscle Tone",
+      "coverImage": "/src/assets/images/hero_workout_athlete_1791536995439.jpg",
+      "description": "A structured 4-week introduction to fundamental movement patterns, exercise technique, and habit consistency.",
+      "isPublished": true,
+      "daysPerWeek": 3,
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "title": "Full Body A: Squat & Push Focus",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "goblet_squat",
+              "targetSets": 3,
+              "targetReps": "10-12",
+              "restSeconds": 90,
+              "tempo": "3-0-1"
+            },
+            {
+              "exerciseId": "dumbbell_bench_press",
+              "targetSets": 3,
+              "targetReps": "10-12",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "lat_pulldown",
+              "targetSets": 3,
+              "targetReps": "12",
+              "restSeconds": 60,
+              "tempo": "2-1-1"
+            },
+            {
+              "exerciseId": "plank",
+              "targetSets": 3,
+              "targetReps": "45s",
+              "restSeconds": 60,
+              "tempo": "Static"
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "title": "Rest & Active Recovery",
+          "isRest": true,
+          "exercises": []
+        },
+        {
+          "dayNumber": 3,
+          "title": "Full Body B: Hinge & Pull Focus",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "romanian_deadlift",
+              "targetSets": 3,
+              "targetReps": "10",
+              "restSeconds": 90,
+              "tempo": "3-0-1"
+            },
+            {
+              "exerciseId": "seated_cable_row",
+              "targetSets": 3,
+              "targetReps": "10-12",
+              "restSeconds": 90,
+              "tempo": "2-1-1"
+            },
+            {
+              "exerciseId": "dumbbell_shoulder_press",
+              "targetSets": 3,
+              "targetReps": "10-12",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "leg_press",
+              "targetSets": 3,
+              "targetReps": "12-15",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "title": "Rest Day",
+          "isRest": true,
+          "exercises": []
+        },
+        {
+          "dayNumber": 5,
+          "title": "Full Body C: Functional Strength",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "walking_lunges",
+              "targetSets": 3,
+              "targetReps": "12 per leg",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "push_ups",
+              "targetSets": 3,
+              "targetReps": "10-15",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "cable_face_pull",
+              "targetSets": 3,
+              "targetReps": "15",
+              "restSeconds": 60,
+              "tempo": "2-1-2"
+            },
+            {
+              "exerciseId": "hanging_knee_raise",
+              "targetSets": 3,
+              "targetReps": "12",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            }
+          ]
+        },
+        {
+          "dayNumber": 6,
+          "title": "Rest Day",
+          "isRest": true,
+          "exercises": []
+        },
+        {
+          "dayNumber": 7,
+          "title": "Rest & Weekly Reflection",
+          "isRest": true,
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": "prog_ppl",
+      "title": "Push Pull Legs (PPL)",
+      "slug": "push-pull-legs",
+      "difficulty": "Intermediate",
+      "durationWeeks": 4,
+      "location": "Gym",
+      "goal": "Hypertrophy & Muscle Gain",
+      "coverImage": "/src/assets/images/program_ppl_1791537008009.jpg",
+      "description": "The premier physique architecture split separating pressing, pulling, and lower-body movements for optimal recovery and growth.",
+      "isPublished": true,
+      "daysPerWeek": 6,
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "title": "Push 1: Chest, Front Delts, Triceps",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "barbell_bench_press",
+              "targetSets": 4,
+              "targetReps": "6-8",
+              "restSeconds": 120,
+              "tempo": "3-1-0"
+            },
+            {
+              "exerciseId": "incline_dumbbell_press",
+              "targetSets": 3,
+              "targetReps": "8-10",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "overhead_press",
+              "targetSets": 3,
+              "targetReps": "8-10",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "lateral_raise",
+              "targetSets": 4,
+              "targetReps": "12-15",
+              "restSeconds": 60,
+              "tempo": "2-0-2"
+            },
+            {
+              "exerciseId": "triceps_rope_pushdown",
+              "targetSets": 3,
+              "targetReps": "12",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "title": "Pull 1: Back, Rear Delts, Biceps",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "barbell_deadlift",
+              "targetSets": 3,
+              "targetReps": "5",
+              "restSeconds": 180,
+              "tempo": "2-1-1"
+            },
+            {
+              "exerciseId": "barbell_row",
+              "targetSets": 4,
+              "targetReps": "8-10",
+              "restSeconds": 90,
+              "tempo": "2-1-1"
+            },
+            {
+              "exerciseId": "lat_pulldown",
+              "targetSets": 3,
+              "targetReps": "10-12",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "cable_face_pull",
+              "targetSets": 3,
+              "targetReps": "15",
+              "restSeconds": 60,
+              "tempo": "2-1-2"
+            },
+            {
+              "exerciseId": "dumbbell_bicep_curl",
+              "targetSets": 3,
+              "targetReps": "10-12",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "title": "Legs 1: Quads, Hamstrings, Calves",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "barbell_back_squat",
+              "targetSets": 4,
+              "targetReps": "6-8",
+              "restSeconds": 150,
+              "tempo": "3-0-1"
+            },
+            {
+              "exerciseId": "romanian_deadlift",
+              "targetSets": 3,
+              "targetReps": "8-10",
+              "restSeconds": 90,
+              "tempo": "3-0-1"
+            },
+            {
+              "exerciseId": "leg_press",
+              "targetSets": 3,
+              "targetReps": "10-12",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "calf_raise",
+              "targetSets": 4,
+              "targetReps": "15",
+              "restSeconds": 45,
+              "tempo": "2-1-1"
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "title": "Push 2: Hypertrophy Focus",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "incline_dumbbell_press",
+              "targetSets": 4,
+              "targetReps": "10-12",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "cable_chest_fly",
+              "targetSets": 3,
+              "targetReps": "12-15",
+              "restSeconds": 60,
+              "tempo": "2-1-1"
+            },
+            {
+              "exerciseId": "dumbbell_shoulder_press",
+              "targetSets": 3,
+              "targetReps": "10",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "lateral_raise",
+              "targetSets": 4,
+              "targetReps": "15",
+              "restSeconds": 45,
+              "tempo": "2-0-2"
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "title": "Pull 2: Lats & Arms Focus",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "pull_ups",
+              "targetSets": 4,
+              "targetReps": "8-10",
+              "restSeconds": 90,
+              "tempo": "2-1-1"
+            },
+            {
+              "exerciseId": "seated_cable_row",
+              "targetSets": 4,
+              "targetReps": "10-12",
+              "restSeconds": 90,
+              "tempo": "2-1-1"
+            },
+            {
+              "exerciseId": "dumbbell_hammer_curl",
+              "targetSets": 3,
+              "targetReps": "12",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            }
+          ]
+        },
+        {
+          "dayNumber": 6,
+          "title": "Legs 2: Posterior Chain Focus",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "romanian_deadlift",
+              "targetSets": 4,
+              "targetReps": "8-10",
+              "restSeconds": 120,
+              "tempo": "3-0-1"
+            },
+            {
+              "exerciseId": "walking_lunges",
+              "targetSets": 3,
+              "targetReps": "12 per leg",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "leg_curl",
+              "targetSets": 3,
+              "targetReps": "12-15",
+              "restSeconds": 60,
+              "tempo": "2-0-2"
+            }
+          ]
+        },
+        {
+          "dayNumber": 7,
+          "title": "Full Rest & Recovery",
+          "isRest": true,
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": "prog_strength",
+      "title": "Raw Strength Training",
+      "slug": "raw-strength",
+      "difficulty": "Advanced",
+      "durationWeeks": 4,
+      "location": "Gym",
+      "goal": "Maximum Strength",
+      "coverImage": "/src/assets/images/program_strength_1791537019097.jpg",
+      "description": "Focused powerlifting methodology emphasizing progressive overload across the Big Three: Squat, Bench Press, and Deadlift.",
+      "isPublished": true,
+      "daysPerWeek": 4,
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "title": "Heavy Squat & Leg Strength",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "barbell_back_squat",
+              "targetSets": 5,
+              "targetReps": "3-5",
+              "restSeconds": 180,
+              "tempo": "3-1-0"
+            },
+            {
+              "exerciseId": "leg_press",
+              "targetSets": 3,
+              "targetReps": "8",
+              "restSeconds": 120,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "hanging_knee_raise",
+              "targetSets": 3,
+              "targetReps": "12",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "title": "Heavy Bench & Upper Power",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "barbell_bench_press",
+              "targetSets": 5,
+              "targetReps": "3-5",
+              "restSeconds": 180,
+              "tempo": "2-1-0"
+            },
+            {
+              "exerciseId": "barbell_row",
+              "targetSets": 4,
+              "targetReps": "6",
+              "restSeconds": 120,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "triceps_rope_pushdown",
+              "targetSets": 3,
+              "targetReps": "10",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "title": "Rest & Mobility",
+          "isRest": true,
+          "exercises": []
+        },
+        {
+          "dayNumber": 4,
+          "title": "Heavy Deadlift & Posterior Power",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "barbell_deadlift",
+              "targetSets": 5,
+              "targetReps": "3",
+              "restSeconds": 240,
+              "tempo": "2-1-0"
+            },
+            {
+              "exerciseId": "overhead_press",
+              "targetSets": 4,
+              "targetReps": "5",
+              "restSeconds": 150,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "pull_ups",
+              "targetSets": 4,
+              "targetReps": "6-8",
+              "restSeconds": 120,
+              "tempo": "2-0-1"
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "title": "Rest Day",
+          "isRest": true,
+          "exercises": []
+        },
+        {
+          "dayNumber": 6,
+          "title": "Accessory & Hypertrophy Support",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "incline_dumbbell_press",
+              "targetSets": 3,
+              "targetReps": "8-10",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "seated_cable_row",
+              "targetSets": 3,
+              "targetReps": "8-10",
+              "restSeconds": 90,
+              "tempo": "2-1-1"
+            },
+            {
+              "exerciseId": "walking_lunges",
+              "targetSets": 3,
+              "targetReps": "10 per leg",
+              "restSeconds": 90,
+              "tempo": "2-0-1"
+            }
+          ]
+        },
+        {
+          "dayNumber": 7,
+          "title": "Rest Day",
+          "isRest": true,
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": "prog_fatloss",
+      "title": "Fat Loss & Conditioning",
+      "slug": "fat-loss-conditioning",
+      "difficulty": "Intermediate",
+      "durationWeeks": 4,
+      "location": "Gym or Home",
+      "goal": "Fat Loss & Stamina",
+      "coverImage": "/src/assets/images/program_fatloss_1791537031844.jpg",
+      "description": "High metabolic demand combining compound resistance training and explosive intervals to preserve lean tissue while cutting fat.",
+      "isPublished": true,
+      "daysPerWeek": 4,
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "title": "Upper Body Metabolic Circuit",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "dumbbell_bench_press",
+              "targetSets": 4,
+              "targetReps": "12",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "lat_pulldown",
+              "targetSets": 4,
+              "targetReps": "12",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "push_ups",
+              "targetSets": 3,
+              "targetReps": "15",
+              "restSeconds": 45,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "battle_ropes",
+              "targetSets": 4,
+              "targetReps": "30s",
+              "restSeconds": 45,
+              "tempo": "Max effort"
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "title": "Cardio & Active Core",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "plank",
+              "targetSets": 4,
+              "targetReps": "60s",
+              "restSeconds": 45,
+              "tempo": "Static"
+            },
+            {
+              "exerciseId": "hanging_knee_raise",
+              "targetSets": 3,
+              "targetReps": "15",
+              "restSeconds": 45,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "treadmill_incline",
+              "targetSets": 1,
+              "targetReps": "20 min",
+              "restSeconds": 0,
+              "tempo": "Zone 2"
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "title": "Rest Day",
+          "isRest": true,
+          "exercises": []
+        },
+        {
+          "dayNumber": 4,
+          "title": "Lower Body Density Training",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "goblet_squat",
+              "targetSets": 4,
+              "targetReps": "15",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "romanian_deadlift",
+              "targetSets": 4,
+              "targetReps": "12",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "walking_lunges",
+              "targetSets": 3,
+              "targetReps": "15 per leg",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "battle_ropes",
+              "targetSets": 4,
+              "targetReps": "30s",
+              "restSeconds": 45,
+              "tempo": "Max effort"
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "title": "Rest Day",
+          "isRest": true,
+          "exercises": []
+        },
+        {
+          "dayNumber": 6,
+          "title": "Full Body High Output Finisher",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "push_ups",
+              "targetSets": 4,
+              "targetReps": "12",
+              "restSeconds": 45,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "cable_face_pull",
+              "targetSets": 3,
+              "targetReps": "15",
+              "restSeconds": 45,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "plank",
+              "targetSets": 3,
+              "targetReps": "60s",
+              "restSeconds": 45,
+              "tempo": "Static"
+            }
+          ]
+        },
+        {
+          "dayNumber": 7,
+          "title": "Full Rest",
+          "isRest": true,
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": "prog_home",
+      "title": "Home Calisthenics & Minimalist",
+      "slug": "home-calisthenics",
+      "difficulty": "Beginner to Intermediate",
+      "durationWeeks": 4,
+      "location": "Home",
+      "goal": "Functional Strength & Mobility",
+      "coverImage": "/src/assets/images/program_home_1791537048176.jpg",
+      "description": "Zero excuse bodyweight mastery requiring only a pull-up bar and your body. Build exceptional strength anywhere.",
+      "isPublished": true,
+      "daysPerWeek": 4,
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "title": "Push & Core Mastery",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "push_ups",
+              "targetSets": 4,
+              "targetReps": "12-20",
+              "restSeconds": 60,
+              "tempo": "3-0-1"
+            },
+            {
+              "exerciseId": "pike_push_ups",
+              "targetSets": 3,
+              "targetReps": "8-10",
+              "restSeconds": 75,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "plank",
+              "targetSets": 4,
+              "targetReps": "60s",
+              "restSeconds": 45,
+              "tempo": "Static"
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "title": "Pull & Grip Endurance",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "pull_ups",
+              "targetSets": 4,
+              "targetReps": "6-10",
+              "restSeconds": 90,
+              "tempo": "2-1-1"
+            },
+            {
+              "exerciseId": "bodyweight_rows",
+              "targetSets": 3,
+              "targetReps": "12",
+              "restSeconds": 60,
+              "tempo": "2-1-1"
+            },
+            {
+              "exerciseId": "hanging_knee_raise",
+              "targetSets": 3,
+              "targetReps": "12",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "title": "Rest & Mobility Flow",
+          "isRest": true,
+          "exercises": []
+        },
+        {
+          "dayNumber": 4,
+          "title": "Lower Body Calisthenics",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "bodyweight_squats",
+              "targetSets": 4,
+              "targetReps": "20",
+              "restSeconds": 60,
+              "tempo": "2-1-1"
+            },
+            {
+              "exerciseId": "walking_lunges",
+              "targetSets": 4,
+              "targetReps": "15 per leg",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "calf_raise",
+              "targetSets": 4,
+              "targetReps": "20",
+              "restSeconds": 45,
+              "tempo": "2-1-2"
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "title": "Rest Day",
+          "isRest": true,
+          "exercises": []
+        },
+        {
+          "dayNumber": 6,
+          "title": "Full Body Endurance Circuit",
+          "isRest": false,
+          "exercises": [
+            {
+              "exerciseId": "push_ups",
+              "targetSets": 3,
+              "targetReps": "15",
+              "restSeconds": 45,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "pull_ups",
+              "targetSets": 3,
+              "targetReps": "8",
+              "restSeconds": 60,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "bodyweight_squats",
+              "targetSets": 3,
+              "targetReps": "20",
+              "restSeconds": 45,
+              "tempo": "2-0-1"
+            },
+            {
+              "exerciseId": "plank",
+              "targetSets": 3,
+              "targetReps": "60s",
+              "restSeconds": 45,
+              "tempo": "Static"
+            }
+          ]
+        },
+        {
+          "dayNumber": 7,
+          "title": "Rest Day",
+          "isRest": true,
+          "exercises": []
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "barbell_bench_press",
+      "name": "Barbell Bench Press",
+      "muscleGroup": "Chest",
+      "secondaryMuscles": [
+        "Triceps",
+        "Anterior Deltoids"
+      ],
+      "equipment": "Barbell & Flat Bench",
+      "difficulty": "Intermediate",
+      "startingPosition": "Lie flat on your back on the bench with eyes directly under the racked bar. Plant feet flat into the ground, pinch your shoulder blades together, and create a slight natural arch in your lower back.",
+      "instructions": [
+        "Grip the knurling slightly wider than shoulder-width using a secure closed grip.",
+        "Unrack the bar with straight arms and stabilize it directly over your upper chest.",
+        "Inhale deeply and lower the bar in a controlled arc toward the lower chest/sternum, keeping elbows tucked at approximately 45-75 degrees.",
+        "Lightly touch your chest without bouncing or losing upper-back tension.",
+        "Exhale and press powerfully upward, driving feet into the floor until elbows reach lockout over the upper chest."
+      ],
+      "breathing": "Inhale and brace your core during the descent; exhale forcefully past the sticking point on the press.",
+      "commonMistakes": [
+        "Bouncing the barbell off the sternum to gain momentum",
+        "Flaring elbows out at 90 degrees which strains rotator cuff tendons",
+        "Lifting hips and glutes off the bench during heavy effort",
+        "Loose wrists bending backward under load"
+      ],
+      "safetyTips": "Always use safety pins or spotter arms when training heavy. Never use a \"thumbless/suicide\" grip.",
+      "easierAlternative": "Dumbbell Bench Press or Push-ups",
+      "harderAlternative": "Pause Bench Press (2-second dead pause at chest)",
+      "thumbnail": "/src/assets/images/program_ppl_1791537008009.jpg",
+      "videoUrl": "https://www.youtube.com/embed/rT7DgCr-3pg"
+    },
+    {
+      "id": "barbell_back_squat",
+      "name": "Barbell Back Squat",
+      "muscleGroup": "Legs",
+      "secondaryMuscles": [
+        "Glutes",
+        "Hamstrings",
+        "Core",
+        "Spinal Erectors"
+      ],
+      "equipment": "Barbell & Squat Rack",
+      "difficulty": "Intermediate",
+      "startingPosition": "Step under the bar resting on the traps (high-bar) or rear delts (low-bar). Grip firmly, unrack with chest upright, take 2-3 precise steps back. Stance shoulder-width with toes flared out 15-30 degrees.",
+      "instructions": [
+        "Take a deep belly breath and brace your abdominal wall as if preparing for impact.",
+        "Break simultaneously at the hips and knees, sitting down and back between your thighs.",
+        "Maintain an upright torso and track knees in line with your toes throughout descent.",
+        "Descend until the hip crease falls below the top of the knee (parallel or below).",
+        "Drive powerfully through mid-foot, pushing the floor away to return to full hip extension."
+      ],
+      "breathing": "Inhale and brace 360-degrees into the belt before initiating; exhale at the top of the rep.",
+      "commonMistakes": [
+        "Knees caving inward (valgus collapse) during the ascent",
+        "Weight shifting forward onto toes, lifting heels off ground",
+        "Rounding the lower back (butt wink) at the bottom",
+        "Cutting depth short before reaching parallel"
+      ],
+      "safetyTips": "Set rack safety pins at hip level just below your lowest squat depth.",
+      "easierAlternative": "Goblet Squat or Leg Press",
+      "harderAlternative": "Pause Back Squat or Front Squat",
+      "thumbnail": "/src/assets/images/program_strength_1791537019097.jpg",
+      "videoUrl": "https://www.youtube.com/embed/gcNh17Ckjgg"
+    },
+    {
+      "id": "barbell_deadlift",
+      "name": "Conventional Barbell Deadlift",
+      "muscleGroup": "Back",
+      "secondaryMuscles": [
+        "Hamstrings",
+        "Glutes",
+        "Traps",
+        "Forearms",
+        "Core"
+      ],
+      "equipment": "Barbell & Plates",
+      "difficulty": "Advanced",
+      "startingPosition": "Stand with feet hip-width apart, barbell cut across the middle of your shoelaces (1 inch from shins). Hinge at hips to grab the bar just outside your knees with double overhand or hook grip.",
+      "instructions": [
+        "Bring shins forward to touch the bar without moving it from mid-foot.",
+        "Pull your chest high to flatten the spine and pull the \"slack\" out of the barbell until you hear a metallic click.",
+        "Squeeze armpits tight to engage lats, take a deep brace.",
+        "Push the floor away with your legs, keeping the bar glued against your shins and thighs.",
+        "Lock out with glutes squeezed tight and standing proud at the top; avoid hyperextending lower back.",
+        "Return the bar under control by hinging hips back first until bar clears knees, then bending legs."
+      ],
+      "breathing": "Huge diaphragmatic brace before lifting; exhale once locked out at the top.",
+      "commonMistakes": [
+        "Rounding the lumbar spine under heavy load",
+        "Jerking the bar off the floor without taking slack first",
+        "Letting the bar drift away from the body during the pull",
+        "Over-arching and hyperextending backward at lockout"
+      ],
+      "safetyTips": "Keep the bar as close to your centerline as possible. Use chalk or straps if grip limits you.",
+      "easierAlternative": "Romanian Deadlift or Trap Bar Deadlift",
+      "harderAlternative": "Deficit Deadlift or Paused Deadlift",
+      "thumbnail": "/src/assets/images/hero_workout_athlete_1791536995439.jpg",
+      "videoUrl": "https://www.youtube.com/embed/op9kVnSso6Q"
+    },
+    {
+      "id": "overhead_press",
+      "name": "Standing Overhead Press (OHP)",
+      "muscleGroup": "Shoulders",
+      "secondaryMuscles": [
+        "Triceps",
+        "Upper Chest",
+        "Core",
+        "Glutes"
+      ],
+      "equipment": "Barbell & Rack",
+      "difficulty": "Intermediate",
+      "startingPosition": "Grip the bar slightly wider than shoulder width with forearms perpendicular to ground. Rest the bar on front deltoids and clavicle with tight core and squeezed glutes.",
+      "instructions": [
+        "Tilt head slightly back to clear bar path, then drive bar vertically upward in a straight line.",
+        "As bar clears forehead, push head back through the \"window\" under the bar.",
+        "Lock elbows out overhead with shoulders shrugged slightly upward to stabilize the scapula.",
+        "Lower under control back to collarbone."
+      ],
+      "breathing": "Inhale and brace at the bottom; exhale as bar passes the head to lockout.",
+      "commonMistakes": [
+        "Excessive backward leaning resembling a standing incline bench",
+        "Flaring elbows excessively"
+      ],
+      "safetyTips": "Do not use a false thumbless grip on standing overhead lifts.",
+      "easierAlternative": "Seated Dumbbell Shoulder Press",
+      "harderAlternative": "Push Press or Behind the Neck Press",
+      "thumbnail": "/src/assets/images/program_strength_1791537019097.jpg",
+      "videoUrl": "https://www.youtube.com/embed/2yjwXTZQDDI"
+    },
+    {
+      "id": "lat_pulldown",
+      "name": "Cable Lat Pulldown",
+      "muscleGroup": "Back",
+      "secondaryMuscles": [
+        "Biceps",
+        "Rear Deltoids",
+        "Forearms"
+      ],
+      "equipment": "Cable Pulldown Machine",
+      "difficulty": "Beginner",
+      "startingPosition": "Adjust thigh pad tightly over quads. Grip the wide lat bar with overhand grip just outside shoulder width. Sit tall with chest lifted.",
+      "instructions": [
+        "Depress scapula downward before bending elbows.",
+        "Pull the bar down toward upper chest, driving elbows down and slightly backward.",
+        "Squeeze lats firmly at the bottom for one second.",
+        "Control the return slowly to full arm extension to stretch lats."
+      ],
+      "breathing": "Exhale while pulling downward; inhale smoothly as the bar ascends.",
+      "commonMistakes": [
+        "Swinging backward excessively using torso momentum",
+        "Pulling bar behind the neck"
+      ],
+      "safetyTips": "Keep core engaged and avoid hyperextending lower spine.",
+      "easierAlternative": "Resistance Band Pulldown",
+      "harderAlternative": "Weighted Pull-ups",
+      "thumbnail": "/src/assets/images/hero_workout_athlete_1791536995439.jpg",
+      "videoUrl": "https://www.youtube.com/embed/CAwf7n6Luuc"
+    },
+    {
+      "id": "romanian_deadlift",
+      "name": "Romanian Deadlift (RDL)",
+      "muscleGroup": "Legs",
+      "secondaryMuscles": [
+        "Hamstrings",
+        "Glutes",
+        "Lower Back"
+      ],
+      "equipment": "Barbell or Dumbbells",
+      "difficulty": "Intermediate",
+      "startingPosition": "Stand tall holding barbell in front of thighs with overhand grip, feet hip-width apart and knees soft with a slight unlock.",
+      "instructions": [
+        "Push hips directly backward as if trying to touch a wall behind you with glutes.",
+        "Keep bar sliding down your thighs while keeping back completely flat and lats tight.",
+        "Lower until you feel a deep stretch in hamstrings (usually mid-shin).",
+        "Drive hips forward to return to standing, squeezing glutes at the top."
+      ],
+      "breathing": "Inhale on the hinge down; exhale as you drive hips forward to standing.",
+      "commonMistakes": [
+        "Bending knees too much turning it into a squat",
+        "Rounding lower back"
+      ],
+      "safetyTips": "Do not exceed the active flexibility range of your hamstrings.",
+      "easierAlternative": "Single Leg Dumbbell RDL or Hamstring Curl Machine",
+      "harderAlternative": "Snatch-Grip RDL",
+      "thumbnail": "/src/assets/images/program_strength_1791537019097.jpg",
+      "videoUrl": "https://www.youtube.com/embed/JCXUYuzwNrM"
+    },
+    {
+      "id": "pull_ups",
+      "name": "Strict Bodyweight Pull-Ups",
+      "muscleGroup": "Back",
+      "secondaryMuscles": [
+        "Biceps",
+        "Rear Delts",
+        "Core",
+        "Grip"
+      ],
+      "equipment": "Pull-up Bar",
+      "difficulty": "Intermediate",
+      "startingPosition": "Hang from overhead bar with palms facing away, hands slightly wider than shoulders, core braced with legs straight or crossed.",
+      "instructions": [
+        "Initiate by pulling shoulder blades down and back.",
+        "Drive elbows down toward your ribs to pull chest up toward the bar.",
+        "Clear chin over the bar with control.",
+        "Lower smoothly to full dead hang extension."
+      ],
+      "breathing": "Exhale as you pull up; inhale as you descend.",
+      "commonMistakes": [
+        "Kicking legs or kipping",
+        "Failing to reach full dead hang extension"
+      ],
+      "safetyTips": "Maintain shoulder engagement; don’t disengage completely at the bottom.",
+      "easierAlternative": "Inverted Row or Resistance Band Assisted Pull-up",
+      "harderAlternative": "Weighted Pull-ups or Chest to Bar Pull-ups",
+      "thumbnail": "/src/assets/images/program_home_1791537048176.jpg",
+      "videoUrl": "https://www.youtube.com/embed/eGo4IYlbE5g"
+    },
+    {
+      "id": "push_ups",
+      "name": "Classic Strict Push-Ups",
+      "muscleGroup": "Chest",
+      "secondaryMuscles": [
+        "Triceps",
+        "Anterior Delts",
+        "Core"
+      ],
+      "equipment": "Bodyweight",
+      "difficulty": "Beginner",
+      "startingPosition": "Place hands slightly wider than shoulder width on the floor. Body forms a rigid straight line from heels to head with squeezed glutes and braced core.",
+      "instructions": [
+        "Lower chest toward floor by bending elbows at a 45-degree angle.",
+        "Descend until chest is 1-2 inches above the ground.",
+        "Press through hands to return to top plank position, extending elbows fully."
+      ],
+      "breathing": "Inhale going down; exhale pushing up.",
+      "commonMistakes": [
+        "Sagging hips/lower back",
+        "Elbows flared out 90 degrees"
+      ],
+      "safetyTips": "Keep neck neutral by looking at floor 1 foot in front of hands.",
+      "easierAlternative": "Incline Push-ups (hands on bench/wall)",
+      "harderAlternative": "Decline Push-ups or Deficit Push-ups",
+      "thumbnail": "/src/assets/images/program_home_1791537048176.jpg",
+      "videoUrl": "https://www.youtube.com/embed/IODxDxX7oi4"
+    },
+    {
+      "id": "goblet_squat",
+      "name": "Goblet Squat",
+      "muscleGroup": "Legs",
+      "secondaryMuscles": [
+        "Core",
+        "Upper Back",
+        "Glutes"
+      ],
+      "equipment": "Dumbbell or Kettlebell",
+      "difficulty": "Beginner",
+      "startingPosition": "Hold a dumbbell vertically against your upper chest with both hands under the top bell. Feet shoulder-width apart.",
+      "instructions": [
+        "Keep chest tall, push hips back and bend knees.",
+        "Squat down between legs until elbows touch inside of knees.",
+        "Keep heels glued to the floor and push up to top standing position."
+      ],
+      "breathing": "Inhale descending; exhale driving up.",
+      "commonMistakes": [
+        "Dumbbell drifting away from chest",
+        "Heels rising off floor"
+      ],
+      "safetyTips": "Ideal for teaching proper squat mechanics before barbell loading.",
+      "easierAlternative": "Bodyweight Box Squat",
+      "harderAlternative": "Barbell Front Squat",
+      "thumbnail": "/src/assets/images/hero_workout_athlete_1791536995439.jpg",
+      "videoUrl": "https://www.youtube.com/embed/MeIiIdhvXT4"
+    },
+    {
+      "id": "plank",
+      "name": "Forearm Core Plank",
+      "muscleGroup": "Core",
+      "secondaryMuscles": [
+        "Shoulders",
+        "Glutes",
+        "Quadriceps"
+      ],
+      "equipment": "Floor / Mat",
+      "difficulty": "Beginner",
+      "startingPosition": "Lie face down, propped on forearms with elbows directly under shoulders. Feet hip-width apart.",
+      "instructions": [
+        "Lift body off floor into a rigid straight line.",
+        "Squeeze glutes and draw navel inward toward spine.",
+        "Hold position statically without letting hips sag or pike."
+      ],
+      "breathing": "Slow, steady diaphragmatic breathing while maintaining tension.",
+      "commonMistakes": [
+        "Sagging hips causing lumbar arch",
+        "Holding breath"
+      ],
+      "safetyTips": "End the set if form breaks or lower back pinches.",
+      "easierAlternative": "Knee Plank",
+      "harderAlternative": "RKC Plank with active maximal contraction or Ab Wheel Rollout",
+      "thumbnail": "/src/assets/images/program_home_1791537048176.jpg",
+      "videoUrl": "https://www.youtube.com/embed/pSHjTRCQxIw"
+    },
+    {
+      "id": "battle_ropes",
+      "name": "Alternating Battle Ropes",
+      "muscleGroup": "Cardio",
+      "secondaryMuscles": [
+        "Shoulders",
+        "Arms",
+        "Core",
+        "Lats"
+      ],
+      "equipment": "Battle Ropes",
+      "difficulty": "Intermediate",
+      "startingPosition": "Hold rope handles in each hand with neutral grip. Stand in athletic quarter squat with feet slightly wider than shoulders.",
+      "instructions": [
+        "Alternate raising and slamming arms rapidly to create fluid waves down the ropes.",
+        "Maintain stable braced core and athletic stance throughout the timed interval."
+      ],
+      "breathing": "Maintain rhythmic continuous breathing with high cadence.",
+      "commonMistakes": [
+        "Standing completely upright",
+        "Using only elbows instead of shoulders and core"
+      ],
+      "safetyTips": "Keep slight bend in knees to absorb impact.",
+      "easierAlternative": "Shadow Boxing or Jump Rope",
+      "harderAlternative": "Double Wave Jump Slams",
+      "thumbnail": "/src/assets/images/program_fatloss_1791537031844.jpg",
+      "videoUrl": "https://www.youtube.com/embed/9G0z_8jH6o4"
+    },
+    {
+      "id": "dumbbell_bench_press",
+      "name": "Dumbbell Flat Bench Press",
+      "muscleGroup": "Chest",
+      "secondaryMuscles": [
+        "Triceps",
+        "Anterior Deltoids"
+      ],
+      "equipment": "Dumbbells & Flat Bench",
+      "difficulty": "Beginner",
+      "startingPosition": "Lie on flat bench holding dumbbells above chest with arms extended and palms facing forward.",
+      "instructions": [
+        "Lower weights with control to sides of chest, keeping elbows at 60 degrees.",
+        "Feel deep chest stretch at bottom.",
+        "Press weights back up together over mid-chest without clanging bells."
+      ],
+      "breathing": "Inhale descending; exhale pressing up.",
+      "commonMistakes": [
+        "Bouncing weights or banging them together at top",
+        "Dropping elbows too low below bench"
+      ],
+      "safetyTips": "Keep wrists stacked directly over elbows.",
+      "easierAlternative": "Push-ups",
+      "harderAlternative": "Incline Dumbbell Press",
+      "thumbnail": "/src/assets/images/program_ppl_1791537008009.jpg",
+      "videoUrl": "https://www.youtube.com/embed/VmB1G1K7v94"
+    },
+    {
+      "id": "dumbbell_shoulder_press",
+      "name": "Seated Dumbbell Shoulder Press",
+      "muscleGroup": "Shoulders",
+      "secondaryMuscles": [
+        "Triceps",
+        "Upper Traps"
+      ],
+      "equipment": "Dumbbells & Incline Bench (set upright)",
+      "difficulty": "Beginner",
+      "startingPosition": "Sit upright on bench with dumbbells at shoulder height, palms forward.",
+      "instructions": [
+        "Press dumbbells upward in a slight arc until arms are extended overhead.",
+        "Lower slowly back to ear/shoulder level."
+      ],
+      "breathing": "Exhale pressing up; inhale lowering.",
+      "commonMistakes": [
+        "Arching lower back off the pad",
+        "Lowering weights unevenly"
+      ],
+      "safetyTips": "Keep back flat against the bench pad.",
+      "easierAlternative": "Resistance Band Shoulder Press",
+      "harderAlternative": "Standing Barbell Overhead Press",
+      "thumbnail": "/src/assets/images/program_strength_1791537019097.jpg",
+      "videoUrl": "https://www.youtube.com/embed/qEwKCR5JCog"
+    },
+    {
+      "id": "cable_face_pull",
+      "name": "Cable Face Pull",
+      "muscleGroup": "Shoulders",
+      "secondaryMuscles": [
+        "Rear Deltoids",
+        "Rotator Cuff",
+        "Rhomboids"
+      ],
+      "equipment": "Cable Machine & Rope Attachment",
+      "difficulty": "Beginner",
+      "startingPosition": "Set cable pulley to eye height with rope attachment. Grip rope with thumbs pointing toward you.",
+      "instructions": [
+        "Step back for tension, pull center of rope directly toward bridge of nose.",
+        "Externally rotate shoulders as you pull so hands end up beside ears with elbows high.",
+        "Squeeze rear delts for 1 second, then control back to start."
+      ],
+      "breathing": "Exhale pulling back; inhale returning forward.",
+      "commonMistakes": [
+        "Leading with elbows dropped low",
+        "Using body momentum to jerk cable"
+      ],
+      "safetyTips": "Focus on posture and shoulder health rather than heavy weight.",
+      "easierAlternative": "Resistance Band Pull-Aparts",
+      "harderAlternative": "High to Low Cable Face Pull with Pause",
+      "thumbnail": "/src/assets/images/hero_workout_athlete_1791536995439.jpg",
+      "videoUrl": "https://www.youtube.com/embed/rep-qVOkqgk"
+    },
+    {
+      "id": "walking_lunges",
+      "name": "Walking Lunges",
+      "muscleGroup": "Legs",
+      "secondaryMuscles": [
+        "Glutes",
+        "Hamstrings",
+        "Calves",
+        "Core"
+      ],
+      "equipment": "Dumbbells or Bodyweight",
+      "difficulty": "Beginner",
+      "startingPosition": "Stand tall with feet together, holding dumbbells at sides or hands on hips.",
+      "instructions": [
+        "Take a comfortable stride forward with right leg.",
+        "Lower hips until right thigh is parallel to floor and left back knee hovers 1 inch above floor.",
+        "Drive through right heel to step forward into next stride with left leg."
+      ],
+      "breathing": "Inhale stepping down; exhale driving through step.",
+      "commonMistakes": [
+        "Torso leaning excessively forward",
+        "Front knee caving inward"
+      ],
+      "safetyTips": "Control the descent so back knee does not smash into the floor.",
+      "easierAlternative": "Static Split Squat",
+      "harderAlternative": "Barbell Walking Lunges or Bulgarian Split Squat",
+      "thumbnail": "/src/assets/images/hero_workout_athlete_1791536995439.jpg",
+      "videoUrl": "https://www.youtube.com/embed/L8fvypPrzzs"
+    }
+  ],
+  "workoutLogs": [
+    {
+      "id": "log_1",
+      "userId": "user_demo",
+      "programId": "prog_ppl",
+      "programName": "Push Pull Legs (PPL)",
+      "dayTitle": "Push 1: Chest, Front Delts, Triceps",
+      "date": "2026-10-05T09:32:12.712Z",
+      "durationSeconds": 3120,
+      "exercises": [
+        {
+          "exerciseId": "barbell_bench_press",
+          "exerciseName": "Barbell Bench Press",
+          "sets": [
+            {
+              "setNumber": 1,
+              "reps": 8,
+              "weightKg": 75,
+              "isCompleted": true
+            },
+            {
+              "setNumber": 2,
+              "reps": 8,
+              "weightKg": 80,
+              "isCompleted": true
+            },
+            {
+              "setNumber": 3,
+              "reps": 7,
+              "weightKg": 80,
+              "isCompleted": true
+            },
+            {
+              "setNumber": 4,
+              "reps": 6,
+              "weightKg": 82.5,
+              "isCompleted": true
+            }
+          ]
+        },
+        {
+          "exerciseId": "overhead_press",
+          "exerciseName": "Standing Overhead Press (OHP)",
+          "sets": [
+            {
+              "setNumber": 1,
+              "reps": 8,
+              "weightKg": 45,
+              "isCompleted": true
+            },
+            {
+              "setNumber": 2,
+              "reps": 8,
+              "weightKg": 47.5,
+              "isCompleted": true
+            },
+            {
+              "setNumber": 3,
+              "reps": 7,
+              "weightKg": 47.5,
+              "isCompleted": true
+            }
+          ]
+        }
+      ],
+      "totalVolumeKg": 3372.5,
+      "totalSetsCompleted": 7,
+      "totalRepsCompleted": 52,
+      "difficultyRating": 8,
+      "notes": "Great pump on bench press. Increased final set to 82.5kg."
+    },
+    {
+      "id": "log_2",
+      "userId": "user_demo",
+      "programId": "prog_ppl",
+      "programName": "Push Pull Legs (PPL)",
+      "dayTitle": "Pull 1: Back, Rear Delts, Biceps",
+      "date": "2026-10-07T09:32:12.712Z",
+      "durationSeconds": 2880,
+      "exercises": [
+        {
+          "exerciseId": "barbell_deadlift",
+          "exerciseName": "Conventional Barbell Deadlift",
+          "sets": [
+            {
+              "setNumber": 1,
+              "reps": 5,
+              "weightKg": 120,
+              "isCompleted": true
+            },
+            {
+              "setNumber": 2,
+              "reps": 5,
+              "weightKg": 130,
+              "isCompleted": true
+            },
+            {
+              "setNumber": 3,
+              "reps": 5,
+              "weightKg": 140,
+              "isCompleted": true
+            }
+          ]
+        },
+        {
+          "exerciseId": "lat_pulldown",
+          "exerciseName": "Cable Lat Pulldown",
+          "sets": [
+            {
+              "setNumber": 1,
+              "reps": 12,
+              "weightKg": 60,
+              "isCompleted": true
+            },
+            {
+              "setNumber": 2,
+              "reps": 10,
+              "weightKg": 65,
+              "isCompleted": true
+            },
+            {
+              "setNumber": 3,
+              "reps": 10,
+              "weightKg": 65,
+              "isCompleted": true
+            }
+          ]
+        }
+      ],
+      "totalVolumeKg": 3915,
+      "totalSetsCompleted": 6,
+      "totalRepsCompleted": 47,
+      "difficultyRating": 8,
+      "notes": "Felt very explosive on deadlifts. Locked out clean 140kg."
+    },
+    {
+      "id": "log_1791538792155",
+      "userId": "user_demo",
+      "programId": "prog_ppl",
+      "programName": "Push Pull Legs (PPL)",
+      "dayTitle": "Push 1: Chest, Front Delts, Triceps",
+      "date": "2026-10-09T09:39:52.155Z",
+      "durationSeconds": 6,
+      "exercises": [
+        {
+          "exerciseId": "barbell_bench_press",
+          "exerciseName": "Barbell Bench Press",
+          "sets": [
+            {
+              "setNumber": 1,
+              "reps": 6,
+              "weightKg": 40,
+              "isCompleted": true,
+              "isBodyweight": false
+            },
+            {
+              "setNumber": 2,
+              "reps": 6,
+              "weightKg": 40,
+              "isCompleted": true,
+              "isBodyweight": false
+            },
+            {
+              "setNumber": 3,
+              "reps": 6,
+              "weightKg": 40,
+              "isCompleted": true,
+              "isBodyweight": false
+            },
+            {
+              "setNumber": 4,
+              "reps": 6,
+              "weightKg": 40,
+              "isCompleted": true,
+              "isBodyweight": false
+            }
+          ]
+        },
+        {
+          "exerciseId": "incline_dumbbell_press",
+          "exerciseName": "incline dumbbell press",
+          "sets": [
+            {
+              "setNumber": 1,
+              "reps": 8,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            },
+            {
+              "setNumber": 2,
+              "reps": 8,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            },
+            {
+              "setNumber": 3,
+              "reps": 8,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            }
+          ]
+        },
+        {
+          "exerciseId": "overhead_press",
+          "exerciseName": "Standing Overhead Press (OHP)",
+          "sets": [
+            {
+              "setNumber": 1,
+              "reps": 8,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            },
+            {
+              "setNumber": 2,
+              "reps": 8,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            },
+            {
+              "setNumber": 3,
+              "reps": 8,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            }
+          ]
+        },
+        {
+          "exerciseId": "lateral_raise",
+          "exerciseName": "lateral raise",
+          "sets": [
+            {
+              "setNumber": 1,
+              "reps": 12,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            },
+            {
+              "setNumber": 2,
+              "reps": 12,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            },
+            {
+              "setNumber": 3,
+              "reps": 12,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            },
+            {
+              "setNumber": 4,
+              "reps": 12,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            }
+          ]
+        },
+        {
+          "exerciseId": "triceps_rope_pushdown",
+          "exerciseName": "triceps rope pushdown",
+          "sets": [
+            {
+              "setNumber": 1,
+              "reps": 12,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            },
+            {
+              "setNumber": 2,
+              "reps": 12,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            },
+            {
+              "setNumber": 3,
+              "reps": 12,
+              "weightKg": 40,
+              "isCompleted": false,
+              "isBodyweight": false
+            }
+          ]
+        }
+      ],
+      "totalVolumeKg": 960,
+      "totalSetsCompleted": 4,
+      "totalRepsCompleted": 24,
+      "difficultyRating": 7,
+      "notes": ""
+    }
+  ],
+  "bodyMetrics": [
+    {
+      "id": "w_1",
+      "userId": "user_demo",
+      "date": "2026-09-25T09:32:12.712Z",
+      "weightKg": 79.2,
+      "notes": "Starting weight check"
+    },
+    {
+      "id": "w_2",
+      "userId": "user_demo",
+      "date": "2026-10-02T09:32:12.712Z",
+      "weightKg": 78.8,
+      "notes": "Morning fasting"
+    },
+    {
+      "id": "w_3",
+      "userId": "user_demo",
+      "date": "2026-10-07T09:32:12.712Z",
+      "weightKg": 78.5,
+      "notes": "Feeling leaner"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "m_1",
+      "userId": "user_demo",
+      "date": "2026-09-25T09:32:12.712Z",
+      "chestCm": 102,
+      "waistCm": 84,
+      "armsCm": 37,
+      "thighsCm": 58
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_init",
+      "userId": "user_demo",
+      "userEmail": "alex@forgefitness.com",
+      "amount": 0,
+      "currency": "USD",
+      "status": "succeeded",
+      "date": "2026-10-04T09:32:12.712Z",
+      "provider": "forge_trial",
+      "planName": "7-Day Free Trial Activated",
+      "transactionRef": "TRIAL_7D_INIT"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit_1791538941388",
+      "adminId": "user_admin",
+      "adminEmail": "admin@forgefitness.com",
+      "action": "SETTINGS_UPDATE",
+      "details": "Updated pricing ($599) and site configuration",
+      "timestamp": "2026-10-09T09:42:21.388Z"
+    },
+    {
+      "id": "audit_1791538940051",
+      "adminId": "user_admin",
+      "adminEmail": "admin@forgefitness.com",
+      "action": "SETTINGS_UPDATE",
+      "details": "Updated pricing ($599) and site configuration",
+      "timestamp": "2026-10-09T09:42:20.051Z"
+    },
+    {
+      "id": "audit_1791538937571",
+      "adminId": "user_admin",
+      "adminEmail": "admin@forgefitness.com",
+      "action": "SETTINGS_UPDATE",
+      "details": "Updated pricing ($599) and site configuration",
+      "timestamp": "2026-10-09T09:42:17.571Z"
+    },
+    {
+      "id": "audit_1791538936733",
+      "adminId": "user_admin",
+      "adminEmail": "admin@forgefitness.com",
+      "action": "SETTINGS_UPDATE",
+      "details": "Updated pricing ($599) and site configuration",
+      "timestamp": "2026-10-09T09:42:16.733Z"
+    },
+    {
+      "id": "audit_1",
+      "adminId": "user_admin",
+      "adminEmail": "admin@forgefitness.com",
+      "action": "SYSTEM_BOOTSTRAP",
+      "details": "Initial system deployment and program catalog publication",
+      "timestamp": "2026-09-09T09:32:12.712Z"
+    }
+  ],
+  "config": {
+    "monthlyPrice": 599,
+    "currency": "IND",
+    "trialDurationDays": 7,
+    "heroHeadline": "Build Strength. Track Progress. Become Better.",
+    "heroSubheadline": "Follow structured workout programs, master every exercise, and see your progress over time — all in one place.",
+    "announcement": "Special Offer: Start with an unconditional 7-Day Free Trial. No charge today.",
+    "contactEmail": "support@forgefitness.com",
+    "contactPhone": "+1 (800) 555-FORGE"
+  }
+}

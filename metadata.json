@@ -1,0 +1,6 @@
+{
+  "name": "Forge Fitness - Premium Workout & Tracking",
+  "description": "Follow structured workout programs, master every exercise with step-by-step guidance, log workouts in real time, and track fitness progress.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
